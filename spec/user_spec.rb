@@ -7,6 +7,7 @@ RSpec.describe User do
       expect(user.logged_in).to be true
     end
   end
+
   describe "#log_out" do
     it "logs the user out" do
       user = User.new "test"
@@ -14,6 +15,7 @@ RSpec.describe User do
       expect(user.logged_in).to be false
     end
   end
+
   describe "#username" do
     it "returns the correct username" do
       user = User.new "test"
